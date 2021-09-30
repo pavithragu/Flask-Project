@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+   <title>List Of Contacts</title>
+ <style type="text/css">
+   h2 {
+	  color:orange;
+	  border-radius:10px;
+	  padding:10px;
+	  background-color: black;
+	  }
+
+   body {
+	  text-align:center;
+	  background-color:#F9B5A7;
+      margin:3%;
+	  }
+
+   a {
+     text-decoration: none;
+     color: darkblue;
+     }
+
+     table {
+    border: 1px solid;
+    border-color: black;
+}
+tr{
+    outline: 1px solid black;
+    padding: 10px;
+}
+
+div#table {
+    text-align: -webkit-center;
+    margin-top: 50px;
+}table {
+  width: 100%;
+  text-align:center;
+}
+
+th, tr {
+  height: 30px;
+}
+  </style>
+ </head>
+ <body>
+ <h2>Contact Details</h2>
+ <div id="table">
+ <table>
+ <thead><tr>
+ <th>Sno</th>
+ <th>FirstName</th>
+<th>LastName</th>   
+ <th>MobileNumber</th>
+<th>OfficeNumber</th>
+ <th>MailID</th>
+	 <th>Address</th></tr>
+ </thead>
+	 <tbody>
+ {% for row in rows %}
+ <tr>
+ <td>{{row["Sno"]}}</td>
+ <td>{{row["FirstName"]}}</td>
+ <td>{{row["LastName"]}}</td>
+ <td>{{row["MobileNumber"]}}</td>
+ <td>{{row["OfficeNumber"]}}</td>
+ <td>{{row["mailid"]}}</td>
+ <td>{{row["address"]}}</td>
+		 </tr></tbody>
+ {% endfor %}   
+ </table></div>
+ <br><br>
+ <a href="/">Go back to home page</a>
+ </body>
+ </html> 
