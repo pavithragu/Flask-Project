@@ -1,0 +1,13 @@
+# Flask-Project
+
+Python project using Flask Framework...
+
+Hi Friends!
+
+This is a project of Flask Framework with SQLite3 Database...
+
+By using this project you can easily craete an addressbook database, and you can also perform CRUD operations over it...
+
+This is completely a web based application...
+
+Thank you!
