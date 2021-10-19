@@ -41,8 +41,8 @@ def saveDetails():
             msg = "Can't Add Details Into Contact List Check The Input Data's"
 
         finally:
-            return render_template("success.html", message=msg)
             connection.close()
+            return render_template("success.html", message=msg)
 
 
 @app.route("/view")
